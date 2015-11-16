@@ -1,0 +1,41 @@
+// ____
+// ________
+// ________________
+// ________ NOYAU SASS - NUANCE ROUILLE ________
+// ________________
+// ________
+// ____
+
+
+// ________ COULEURS VARIABLES ________
+$bgBords: linear-gradient(to top, rgba(0, 64, 64, 0.1), rgba(0, 64, 64, 0.2), rgba(0, 64, 64, 0.5), rgba(0, 64, 64, 0.8), rgba(0, 64, 64, 0.1))
+$colorBords: rgba(#CD3219, 1)
+
+// ________ IMPORTS ________
+@import paradoxe
+
+html, body
+	position: relative
+	min-height: 100%
+body
+	background-color: #2C2C2C
+
+header
+	position: fixed
+	left: 0
+	top: 0
+	height: 88px
+	width: 100%
+	background-color: #000000
+	background-image: $bgBords
+	border-bottom: 1px solid $colorBords
+	box-shadow: 0 0 28px rgba(0, 0, 0, 1)
+	color: $colorBords
+
+footer
+	@extend header
+	position: fixed
+	top: 90%
+	height: 10%
+	border-top: 1px solid $colorBords
+	border-bottom: none
